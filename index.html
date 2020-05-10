@@ -28,8 +28,11 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
-          <h1>Creando Documentación con Sphinx</h1>
+        <section class="center">
+          <h1>
+            Creando Documentación con Sphinx
+            <i class="fas fa-book"></i>
+          </h1>
           <p>
             <small>
               Santos Gallegos
@@ -59,25 +62,111 @@
           </ul>
         </section>
 
-        <section>
-          <h2>Importancia de Escribir Documentación</h2>
+        <section class="center">
+          <h2>Feature que no está documentado no existe</h2>
         </section>
 
         <section>
-          <h2>Tipos de documentación</h2>
+          <h3>Importancia de escribir documentación</h3>
+          <ul>
+            <li>
+              Transimitir conocimiento de manera rápida y fácil
+            </li>
+            <li>
+              Aprender cómo instalar, usar y configurar el software
+            </li>
+            <li>
+              Aprender qué opciones provee el software
+            </li>
+            <li>
+              Aprender qué interfaces provee el software
+            </li>
+            <li>
+              Aprender cómo luce el software antes de instalarlo
+            </li>
+            <li>
+              Aprender cómo no usar el software
+            </li>
+          </ul>
         </section>
+
         <section>
-          <h2>Escribiendo documentación</h2>
+          <h3>Importancia de documentación en proyectos open source</h3>
+          <ul>
+            <li>
+              Más usuarios usarán tu proyecto
+            </li>
+            <li>
+              Tendrás colaboradores
+            </li>
+            <li>
+              Menos preguntas que responder
+            </li>
+            <li>
+              Y una comunidad más grande
+            </li>
+          </ul>
         </section>
+
+        <section>
+          <h3>Importancia de leer documentación</h3>
+          <p>Probablemente...</p>
+          <ul>
+            <li>
+              Lo que te estás preguntando está en la documentación
+            </li>
+            <li>
+              El problema que estás teniendo está en la documentación
+            </li>
+            <li>
+              La mejor manera de hacer lo que estás pensando está en la documentación
+            </li>
+          </ul>
+        </section>
+
+        <section class="center">
+          <h3>
+            ... ¡Y probablemente está en la sección que te saltaste!
+          </h3>
+        </section>
+
+        <section>
+          <h3>¿Por qué no leen tu documentación?</h3>
+          <ul>
+            <li>Difícil de encontrar y leer</li>
+            <li>Difícil de entender</li>
+            <li>Incompleta</li>
+            <li>No está en su idioma nativo</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Sphinx</h3>
+          <small>
+            <a href="https://www.sphinx-doc.org/">https://www.sphinx-doc.org/</a>
+          </small>
+
+          <p>
+            <code>pip install sphinx</code>
+          </p>
+
+          <ul>
+            <li>reStructuredText</li>
+            <li>¡Cross-referencias a cualquier lugar!</li>
+            <li>HTML, PDF, ePub</li>
+            <li>Temas</li>
+            <li>Extensible</li>
+            <li>
+              Python, requests, flask, Django, Linux kernel
+            </li>
+          </ul>
+        </section>
+
         <section>
           <h2>Docstrings</h2>
         </section>
         <section>
           <h2>Markdown y reStructuredText</h2>
-        </section>
-        <section>
-          <h2>Qué es Sphinx</h2>
-          <p>Proyectos usando sphinx: Python, requests, flask, django, Linux kernel</p>
         </section>
         <section>
           <h2>Alternativas</h2>
@@ -97,7 +186,7 @@
         </section>
 
         <section>
-          <h2>Primero resuelve el problema, luego programa</h2>
+          <h2>Documenta tu siguiente proyecto con Sphinx</h2>
           <footer class= "footer">
             <p>
               <small class="text-center">
@@ -143,6 +232,7 @@
       // - https://github.com/hakimel/reveal.js#configuration
       // - https://github.com/hakimel/reveal.js#dependencies
       Reveal.initialize({
+        center: false,
         maxScale: 0.7,
         hash: true,
         dependencies: [
