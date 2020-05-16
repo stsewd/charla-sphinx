@@ -70,7 +70,7 @@
           <h3>Importancia de escribir documentación</h3>
           <ul>
             <li>
-              Transimitir conocimiento de manera rápida y fácil
+              Transmitir conocimiento de manera rápida y fácil
             </li>
             <li>
               Aprender cómo instalar, usar y configurar el software
@@ -175,10 +175,10 @@
           <p>
             <ul>
               <li>
-                Sintáxis más fácil de aprender
+                Sintaxis más fácil de aprender
               </li>
               <li>
-                Markdown no tiene un stándar
+                Markdown no tiene un estándar
               </li>
               <li>
                 Markdown no es extensible
@@ -188,10 +188,16 @@
         </section>
 
         <section>
-
-          <h2>
-            reStructuredText
-          </h2>
+          <header>
+            <h2>
+              reStructuredText
+            </h2>
+            <small>
+              <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">
+                www.sphinx-doc.org/en/master/usage/restructuredtext/
+              </a>
+            </small>
+          </header>
           <ul>
             <li>
               Estándar
@@ -203,7 +209,6 @@
               Roles &amp; directives
             </li>
           </ul>
-
         </section>
 
         <section>
@@ -224,6 +229,27 @@ docs
 ├── Makefile
 ├── _static
 └── _templates
+          </code>
+          </pre>
+
+          <aside class="notes">
+            Mostrar como crear el primer proyecto,
+            y explicar la estructura.
+          </aside>
+        </section>
+
+        <section>
+          <h2>
+            Walktrough con los docs de flask
+          </h2>
+          <pre class="hljs bash">
+          <code>
+git clone https://github.com/pallets/flask/
+cd flask
+pip install -e .
+pip install -r docs/requirements.txt
+cd docs
+make html
           </code>
           </pre>
         </section>
