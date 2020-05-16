@@ -69,25 +69,46 @@
         <section>
           <h3>Importancia de escribir documentación</h3>
           <ul>
-            <li>
+            <li class="fragment">
               Transmitir conocimiento de manera rápida y fácil
             </li>
-            <li>
+            <li class="fragment">
               Aprender cómo instalar, usar y configurar el software
             </li>
-            <li>
+            <li class="fragment">
               Aprender qué opciones provee el software
             </li>
-            <li>
+            <li class="fragment">
               Aprender qué interfaces provee el software
             </li>
-            <li>
+            <li class="fragment">
               Aprender cómo luce el software antes de instalarlo
             </li>
-            <li>
+            <li class="fragment">
               Aprender cómo no usar el software
             </li>
           </ul>
+
+          <aside class="notes">
+            <p>
+              No siempre vamos a estar en un proyecto para responder
+              las preguntas o explicar el cómo de varias cosas.
+            </p>
+            <p>
+              Feature que no está documentado no existe,
+              el usuario no tiene una manera fácil de saber que ese feature existe.
+            </p>
+            <p>
+              En caso que sea una API, documentar su interfaz es importante.
+            </p>
+            <p>
+              Es más fácil atraer la atención de usuarios si ven como luce y las funcionalidades de tu software.
+            </p>
+            <p>
+              Puede que existan varias formas de realizar una tarea,
+              pero no todas son correctas o las más adecuadas.
+            </p>
+          </aside>
         </section>
 
         <section>
@@ -106,19 +127,31 @@
               Y una comunidad más grande
             </li>
           </ul>
+
+          <aside class="notes">
+            <p>
+              Documentación es muy muy importante en proyectos open source.
+              Proyectos más populares, son populares por si amplia documentación.
+              Como Django, por ejemplo.
+            </p>
+            <p>
+              Ayuda a mejorar la documentación de tus proyectos
+              open source favorito.
+            </p>
+          </aside>
         </section>
 
         <section>
           <h3>Importancia de leer documentación</h3>
           <p>Probablemente...</p>
           <ul>
-            <li>
+            <li class="fragment">
               Lo que te estás preguntando está en la documentación
             </li>
-            <li>
+            <li class="fragment">
               El problema que estás teniendo está en la documentación
             </li>
-            <li>
+            <li class="fragment">
               La mejor manera de hacer lo que estás pensando está en la documentación
             </li>
           </ul>
@@ -128,6 +161,13 @@
           <h3>
             ... ¡Y probablemente está en la sección que te saltaste!
           </h3>
+
+          <aside class="notes">
+            <p>
+              Ayuda a mejorar la documentación de tus proyectos
+              open source favorito.
+            </p>
+          </aside>
         </section>
 
         <section>
@@ -138,6 +178,13 @@
             <li>Incompleta</li>
             <li>No está en su idioma nativo</li>
           </ul>
+
+          <aside class="notes">
+            <p>
+              Ayuda a mejorar la documentación de tus proyectos
+              open source favorito.
+            </p>
+          </aside>
         </section>
 
         <section>
@@ -153,17 +200,37 @@
           </p>
 
           <ul>
-            <li>reStructuredText</li>
-            <li>¡Cross-references!</li>
-            <li>Documentación en prosa y docstrings</li>
-            <li>Extensible</li>
-            <li>HTML, PDF, ePub</li>
-            <li>Temas</li>
-            <li>Multi-lenguaje</li>
-            <li>
-              Python, requests, flask, Django, Linux kernel
+            <li class="fragment">reStructuredText</li>
+            <li class="fragment">¡Cross-references!</li>
+            <li class="fragment">Documentación en prosa y docstrings</li>
+            <li class="fragment">Extensible</li>
+            <li class="fragment">HTML, PDF, ePub</li>
+            <li class="fragment">Temas</li>
+            <li class="fragment">Multi-lenguaje</li>
+            <li class="fragment">
+              Python, requests, Flask, Django, Linux kernel
             </li>
           </ul>
+
+          <aside class="notes">
+            <p>
+              Licencia BSD, licencia open source.
+            </p>
+            <p>
+              También se puede usar con markdown, veremos las diferencias luego.
+            </p>
+            <p>
+              Ya no más links hardcodeados en tu documentación,
+              o links que pueden cambiar y producir 404.
+            </p>
+            <p>
+              Incluye documentación desde tu código,
+              pero también agrega más párrafos desde documentos externos.
+            </p>
+            <p>
+              Varios documentos para lectura off-line (o para leer en e-readers como kindle).
+            </p>
+          </aside>
         </section>
 
         <section>
@@ -209,6 +276,12 @@
               Roles &amp; directives
             </li>
           </ul>
+
+          <aside class="notes">
+            <p>
+              Mostrar un poco de la sintaxis en la web de sphinx.
+            </p>
+          </aside>
         </section>
 
         <section>
@@ -233,7 +306,7 @@ docs
           </pre>
 
           <aside class="notes">
-            Mostrar como crear el primer proyecto,
+            Mostrar como crear el primer proyecto en la terminal,
             y explicar la estructura.
           </aside>
         </section>
@@ -252,20 +325,13 @@ cd docs
 make html
           </code>
           </pre>
-        </section>
 
-        <section>
-          <h2>Docstrings</h2>
-          <pre>
-          <code class="hljs python" data-trim>
-def say_hello(name):
-    """
-    Saluda a `name`.
-
-    :param name: Nombre a quien saludar
-    """
-    print(f"Hello {name}!")
-          </code>
+          <aside class="notes">
+            <p>
+              Mostrar la estructura de la documentación de Flask
+              y compilar el proyecto en HTML y PDF.
+            </p>
+          </aside>
         </section>
 
         <section>
