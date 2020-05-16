@@ -141,10 +141,12 @@
         </section>
 
         <section>
-          <h3>Sphinx</h3>
-          <small>
-            <a href="https://www.sphinx-doc.org/">https://www.sphinx-doc.org/</a>
-          </small>
+          <header>
+            <h3>Sphinx</h3>
+            <small>
+              <a href="https://www.sphinx-doc.org/">https://www.sphinx-doc.org/</a>
+            </small>
+          </header>
 
           <p>
             <code>pip install sphinx</code>
@@ -152,10 +154,12 @@
 
           <ul>
             <li>reStructuredText</li>
-            <li>¡Cross-referencias a cualquier lugar!</li>
+            <li>¡Cross-references!</li>
+            <li>Documentación en prosa y docstrings</li>
+            <li>Extensible</li>
             <li>HTML, PDF, ePub</li>
             <li>Temas</li>
-            <li>Extensible</li>
+            <li>Multi-lenguaje</li>
             <li>
               Python, requests, flask, Django, Linux kernel
             </li>
@@ -163,30 +167,150 @@
         </section>
 
         <section>
-          <h2>Docstrings</h2>
-        </section>
-        <section>
-          <h2>Markdown y reStructuredText</h2>
-        </section>
-        <section>
-          <h2>Alternativas</h2>
+          <h2>
+            <s>
+              Markdown
+            </s>
+          </h2>
           <p>
-            Doxigen.
-            Rustdoc
+            <ul>
+              <li>
+                Sintáxis más fácil de aprender
+              </li>
+              <li>
+                Markdown no tiene un stándar
+              </li>
+              <li>
+                Markdown no es extensible
+              </li>
+            </ul>
           </p>
-        </section>
-        <section>
-          <h2>Primer proyecto en sphinx</h2>
-        </section>
-        <section>
-          <h2>Extensiones</h2>
-        </section>
-        <section>
-          <h2>Intersphinx</h2>
         </section>
 
         <section>
-          <h2>Documenta tu siguiente proyecto con Sphinx</h2>
+
+          <h2>
+            reStructuredText
+          </h2>
+          <ul>
+            <li>
+              Estándar
+            </li>
+            <li>
+              Extensible
+            </li>
+            <li>
+              Roles &amp; directives
+            </li>
+          </ul>
+
+        </section>
+
+        <section>
+          <h2>Primer proyecto en sphinx</h2>
+          <p>
+            <code>
+              sphinx-quickstart docs
+            </code>
+          </p>
+
+          <pre class="hljs plaintext">
+          <code>
+docs
+├── _build
+├── conf.py
+├── index.rst
+├── make.bat
+├── Makefile
+├── _static
+└── _templates
+          </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Docstrings</h2>
+          <pre>
+          <code class="hljs python" data-trim>
+def say_hello(name):
+    """
+    Saluda a `name`.
+
+    :param name: Nombre a quien saludar
+    """
+    print(f"Hello {name}!")
+          </code>
+        </section>
+
+        <section>
+          <header>
+            <h2>Extensiones</h2>
+            <small>
+              <a href="https://www.sphinx-doc.org/en/master/usage/extensions/index.html">
+                www.sphinx-doc.org/en/master/usage/extensions/
+              </a>
+            </small>
+          </header>
+
+          <ul>
+            <li>
+              intersphinx
+            </li>
+            <li>
+              autodoc
+            </li>
+            <li>
+              autosectionlabel
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tools recomendadas</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/GaretJax/sphinx-autobuild" target="_blank">
+                https://github.com/GaretJax/sphinx-autobuild
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/djungelorm/sphinx-tabs" target="_blank">
+                https://github.com/djungelorm/sphinx-tabs
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/stsewd/sphinx.nvim" target="_blank">
+                https://github.com/stsewd/sphinx.nvim
+              </a>
+            </li>
+            <li>
+              <a href="https://readthedocs.org/" target="_blank">
+                https://readthedocs.org/
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Alternativas</h2>
+          <ul>
+            <li>
+              Mkdocs
+            </li>
+            <li>
+              Doxigen
+            </li>
+            <li>
+              Rustdoc
+            </li>
+            <li>
+              JSDoc
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>¡Documenta tu siguiente proyecto con Sphinx!</h2>
           <footer class= "footer">
             <p>
               <small class="text-center">
