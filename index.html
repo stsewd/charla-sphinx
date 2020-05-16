@@ -64,6 +64,13 @@
 
         <section class="center">
           <h2>Feature que no está documentado no existe</h2>
+
+          <aside class="notes">
+            <p>
+              Antes de hablar sobre sphinx,
+              hablemos de la importancia de la documentación.
+            </p>
+          </aside>
         </section>
 
         <section>
@@ -317,7 +324,7 @@ docs
           </h2>
           <pre class="hljs bash">
           <code>
-git clone https://github.com/pallets/flask/
+git clone --depth=1 https://github.com/pallets/flask/
 cd flask
 pip install -e .
 pip install -r docs/requirements.txt
